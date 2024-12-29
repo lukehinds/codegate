@@ -51,7 +51,7 @@ jobs:
         github_token: ${{ github.token }}
         workflow: ".github/workflows/import_packages.yml"
         workflow_conclusion: success
-        name: sqlite_vectordb_file
+        name: sqlite_data
         path: /tmp/
         name_is_regexp: true
         skip_unpack: false
@@ -76,6 +76,6 @@ jobs:
     - name: 'Upload SQLite Vector DB File'
       uses: actions/upload-artifact@6f51ac03b9356f520e9adb1b1b7802705f340c2b # v4
       with:
-        name: sqlite_vectordb_file
+        name: sqlite_data
         path: /tmp/sqlite_data/vectordb.db
         retention-days: 90
