@@ -3,6 +3,7 @@
 # those are hardcoded on the image, will not change
 CODEGATE_DB_FILE="/app/codegate_volume/db/codegate.db"
 CODEGATE_VEC_DB_FILE="/app/sqlite_data/vectordb.db"
+MODEL_BASE_PATH="/app/codegate_volume/models"
 CODEGATE_CERTS="/app/codegate_volume/certs"
 
 genrerate_certs() {
